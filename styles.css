@@ -1,7 +1,8 @@
 body {
     text-align: center;
 }
-p { 
-    word-spacing: 30px;
+
+.right {
     text-align: right;
+    float: right;
 }
