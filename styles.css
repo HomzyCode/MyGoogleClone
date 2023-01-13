@@ -2,7 +2,27 @@ body {
     text-align: center;
 }
 
-.right {
+li {
+    list-style-type: none; /* removes bullet points */
+    padding: 10px;
+}
+
+a {
+    text-decoration: none; /* removes the underline since its a hyperlinkl */
+}
+
+header {
+    display: flex;
+    height: 10vh;
+   
+}
+
+header ul {
+    display: flex;
     text-align: right;
-    float: right;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
 }
