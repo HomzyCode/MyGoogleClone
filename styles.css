@@ -16,6 +16,9 @@ a, i {
     color: #5F6368;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 header {
     display: flex;
@@ -32,6 +35,10 @@ header ul {
     justify-content: flex-end;
     align-items: center;
     padding: 0 15px;
+}
+
+section {
+    height: 75vh;
 }
 /* Google Logo */
 .image {
@@ -50,15 +57,17 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius:30px;
 }
 
 .searchBar input {
     font-size: 14px;
     width: 450px;
-    height: 20px;
-    padding-left: 40px;
+    height: 25px;
+    padding-left: 30px;
     margin: 30px 0;
 }
+
 
 .searchBar  > input:hover {
     box-shadow: 0 0 5px rgba(0,0,0, 0.2);
@@ -67,16 +76,31 @@ header ul {
 .searchBar i {
     width: 50px;
     position: relative;
-    left: 60px;
+    left: 45px;
+}
+
+.mic {
+    height: 20px;
+    position: relative;
+    top: 2px;
+    right: 20px;
+    
 }
 
 /* Search Buttons */
 
-.search_buttons {
+.searchButtons {
     display: flex;
     justify-content: center;
+    border:none;
+    color:#707070;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
 }
-.search_buttons input {
+.searchButtons input {
     color: #5F6368;
     border: 1px solid #f2f2f2;
     margin: 11px 4px;
@@ -87,14 +111,51 @@ header ul {
     border-radius: 5px;
 }
 
-.search_buttons > input:hover {
+.searchButtons > input:hover {
     color: #222;
     border: 1px solid #ccc;
     box-shadow: 0 0 1px rgba(0,0,0, 0.2);
 }
 
+.searchButton:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+}
 p {
     margin-top: 15px;
     font-size: 13px;
     text-align: center;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer {
+    background: #f7f7f7;
+    padding: 20px 1.5em;
+    
+} 
+.footer p {
+    padding-bottom: 2px 1.5em;
+    
+}
+.footer i {
+    padding-right: 5px;
 }
