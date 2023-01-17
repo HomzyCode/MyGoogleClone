@@ -1,0 +1,86 @@
+body, ul, li, img {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none; /* removes bullet points */
+    padding: 0 7px;
+}
+
+a, i {
+    text-decoration: none; /* removes the underline since its a hyperlinkl */
+    font-size: 15px;
+    color: #5F6368;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+   
+}
+
+header a { color: #333;}
+
+header ul {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+}
+
+section {
+    height: 75vh;
+}
+
+/* Google Logo */
+.googleImageLogo {
+    display: flex; /* automatically aligns elements in columns or rows */
+    justify-content: center;
+}
+
+.googleImageLogo img {
+    width: 350px;
+    padding-top: 100px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer {
+    background: #f7f7f7;
+    padding: 20px 1.5em;
+    
+} 
+.footer p {
+    padding-bottom: 2px 1.5em;
+    
+}
+.footer i {
+    padding-right: 5px;
+}
